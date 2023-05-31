@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/d2ba03fe46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link slick plugin  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- link bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./js/script.js"></script> -->
+    <!-- link countdown timer plugin -->
+    <script src="./js/jquery.countdown.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- or link to the CDN -->
+    <!-- <link rel="stylesheet" href="splide/splide-4.1.3/dist/css/splide.min.css"> -->
+</head>
+
+<body class="m-0">
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark p-lg-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">TOPZONE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-lg-0 mb-2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">iPad</a>
+                    </li>
+                </ul>
+                <form class="d-flex gap-3 align-items-center">
+                    <input type="search" class="form-control bg-dark border-dark text-bg-dark" placeholder="search..."
+                        aria-label="search..." aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+                    <a href="./shopping_cart.html" class="bg-dark">
+                        <i class="fa-solid fa-cart-shopping text-light"></i>
+                    </a>
+                    <button class="btn btn-outline-secondary d-flex align-items-center gap-2" type="submit" id="button-addon2"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i><a href="./form.html" class="text-light">Login</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="grid_container">
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iphone-14-plus-blue-thumb-1-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPhone 14 Plus 128GB</p>
+                <div class="cart_body">
+                    <div class="price">
+                        <span>21.890.000 đ</span>
+                        <strike>24.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 3.110.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iphone-14-pro-gold-thumb-1-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPhone 14 Pro 128GB</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>21.890.000 đ</span>
+                        <strike>24.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 3.110.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/macbook-pro-16-m1-pro-2021-bac-650x650.webp" />
+                    </a>
+                </div>
+                <p>MacBook Pro 16 inch M1 Pro 2021</p>
+                <div class="cart_body">
+                    <div class="price">
+                        <span>44.990.000 đ</span>
+                        <strike>58.490.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 13.500.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/ipad-air-5-wifi-startlight-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPad Air 5 WiFi</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>14.190.000 đ</span>
+                        <strike>15.190.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 1.000.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iphone-12-red-3-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPhone 12 Red 128GB</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>21.890.000 đ</span>
+                        <strike>24.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 3.110.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/mac-mini-m1-2020-8gb-512gb-ab-thumb-1-650x650.webp" />
+                    </a>
+                </div>
+                <p>Mac mini M1 2020</p>
+                <div class="cart_body">
+                    <div class="price">
+                        <span>13.990.000 đ</span>
+                        <strike>19.290.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 6.700.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iphone-14-plus-blue-thumb-1-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPhone 14 Plus 128GB</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>21.890.000 đ</span>
+                        <strike>24.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 3.110.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iphone-11-black-1-1-2-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPhone 11 Black 128GB</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>21.890.000 đ</span>
+                        <strike>24.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 3.110.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/macbook-air-m1-2020-spacegray-thumb-650x650.webp" />
+                    </a>
+                </div>
+                <p>MacBook Air M1 2020</p>
+                <div class="cart_body">
+                    <div class="price">
+                        <span>24.490.000 đ</span>
+                        <strike>32.990.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 8.500.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_product">
+                <div class="image_wrapper">
+                    <a href="./product_detail.html">
+                        <img src="./images/iPad-gen-10-sliver-thumb-650x650.webp" />
+                    </a>
+                </div>
+                <p>iPad 10 WiFi + Cellular</p>
+                <div class="cart_body">
+                    <div class="cart_gb">
+                        <span>128 GB</span>
+                        <span>256 GB</span>
+                    </div>
+                    <div class="price">
+                        <span>14.290.000 đ</span>
+                        <strike>15.290.000 đ</strike>
+                    </div>
+                    <span class="cart_text">Tiết kiệm đến 1.000.000 đ</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffff00;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer_col col-sm-3">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./aboutUs.html">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="./aboutUs.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="./aboutUs.html">Affiliate Program</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col col-sm-3">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <!-- <li>
+                            <a href="#">FAQ</a>
+                        </li> -->
+                        <li>
+                            <a href="./products_list.html">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">Returns</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">Order Status</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">Payment Options</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col col-sm-3">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li>
+                            <a href="./products_list.html">Watch</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">iPad</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">iPhone</a>
+                        </li>
+                        <li>
+                            <a href="./products_list.html">Mac</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col col-sm-3">
+                    <h4>Follow Us</h4>
+                        <div class="social_links">
+                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
