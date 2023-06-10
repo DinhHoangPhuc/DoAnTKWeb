@@ -61,7 +61,9 @@ background-size: cover;">
                     <a href="./shopping_cart.html" class="bg-dark">
                         <i class="fa-solid fa-cart-shopping text-light"></i>
                     </a>
-                    <button class="btn btn-outline-secondary d-flex align-items-center gap-2" type="submit" id="button-addon2"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i><a href="./form.html" class="text-light">Login</a></button>
+                    <button class="btn btn-outline-secondary d-flex align-items-center gap-2" type="submit"
+                        id="button-addon2"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i><a
+                            href="./form.html" class="text-light">Login</a></button>
                 </form>
             </div>
         </div>
@@ -69,30 +71,34 @@ background-size: cover;">
 
     <div class="container-fluid">
         <div class="form_wrapper">
-            <h2 class="text-light text-center">LOGIN</h2>
-            <form class="d-grid">
-                <label for="name">Họ và tên</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="username">Tên đăng nhập</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="passwork">Mật khẩu</label><br>
-                <input type="text" id="passwork" name="passwork"><br>
-                <label for="">Giới tính</label><br>
-                <div class="d-flex gap-5">
-                    <div class="d-felx gap-2">
-                        <input type="radio" id="nam" name="fav_language" value="Nam">
-                        <label for="nam">Nam</label><br>
-                    </div>
-                    <div class="d-flex gap-2 mb-3">
-                        <input type="radio" id="nu" name="fav_language" value="Nu" style="padding: 0;">
-                        <label for="nu">Nữ</label><br>
-                    </div>
+            <h2 class="text-light text-center">ĐĂNG KÍ</h2>
+            <form class="d-grid" id="form_dangki">
+                <div class="input_group">
+                    <label for="name">Họ và tên</label><br>
+                    <input type="text" id="name" name="name" class="form_control"><br>
+                    <span class="error_message"></span>
                 </div>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="diachi">Địa chỉ</label><br>
-                <input type="text" id="diachi" name="diachi"><br>
-                <input type="submit" value="Submit" style="border-radius: 10px;">
+                <div class="input_group">
+                    <label for="username">Tên đăng nhập</label><br>
+                    <input type="text" id="username" name="username" class="form_control"><br>
+                    <span class="error_message"></span>
+                </div>
+                <div class="input_group">
+                    <label for="password">Mật khẩu</label><br>
+                    <input type="password" id="password" name="password" class="form_control"><br>
+                    <span class="error_message"></span>
+                </div>
+                <div class="input_group">
+                    <label for="confirm_passwork">Nhập lại mật khẩu</label><br>
+                    <input type="password" id="confirm_passwork" name="confirm_passwork" class="form_control"><br>
+                    <span class="error_message"></span>
+                </div>
+                <div class="input_group">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" class="form_control"><br>
+                    <span class="error_message"></span>
+                </div>
+                <input type="submit" value="Submit" style="border-radius: 10px; margin-top: 20px;">
             </form>
         </div>
     </div>
@@ -120,9 +126,6 @@ background-size: cover;">
                 <div class="footer_col col-sm-3">
                     <h4>Get Help</h4>
                     <ul>
-                        <!-- <li>
-                            <a href="#">FAQ</a>
-                        </li> -->
                         <li>
                             <a href="./aboutUs.html">Shipping</a>
                         </li>
@@ -156,24 +159,47 @@ background-size: cover;">
                 </div>
                 <div class="footer_col col-sm-3">
                     <h4>Follow Us</h4>
-                        <div class="social_links">
-                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
+                    <div class="social_links">
+                        <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://sinhvien.hufi.edu.vn/sinh-vien-dang-nhap.html">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/validate.js"></script>
+    <script>
+        Validator({
+            form: "#form_dangki",
+            errorSelector: ".error_message",
+            rules: [
+                Validator.IsRequired("#name"),
+                Validator.IsRequired("#username"),
+                Validator.IsRequired("#password"),
+                Validator.MinLength("#password", 6),
+                Validator.IsRequired("#confirm_passwork"),
+                Validator.IsConfirm("#confirm_passwork", function () {
+                    return document.querySelector("#password").value
+                }, "Xác nhận lại mật khẩu không chính xác"),
+                Validator.IsRequired("#email"),
+                Validator.IsEmail("#email")
+            ],
+            onSubmit: function () {
+                window.location.href = "./index.html";
+            }
+        })
+    </script>
 </body>
 
 </html>
